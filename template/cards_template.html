@@ -1,0 +1,59 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg:#F7F5F0;--ink:#1A2238;--muted:#6B7280;--accent:#E8552F;--line:#E3DED3;--panel:#FFFFFF;--navy:#1A2238}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ddd;font-family:"Pretendard",sans-serif;display:flex;flex-direction:column;gap:20px;padding:20px}
+.card{width:1080px;height:1080px;background:var(--bg);color:var(--ink);position:relative;overflow:hidden;padding:96px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.pill{font-weight:700;font-size:28px;letter-spacing:.02em;color:#fff;background:var(--navy);padding:12px 26px;border-radius:999px}
+.date{font-weight:700;font-size:30px;color:var(--accent);border:3px solid var(--accent);padding:9px 22px;border-radius:999px}
+h1{margin-top:88px;font-weight:900;font-size:104px;line-height:1.18;letter-spacing:-0.045em;word-break:keep-all}
+h1 .hl{color:var(--accent)}
+.sub{margin-top:30px;font-weight:600;font-size:36px;color:var(--muted);letter-spacing:-0.02em}
+.big{position:absolute;left:96px;right:96px;bottom:150px;background:var(--navy);color:#fff;border-radius:28px;padding:40px 48px;display:flex;align-items:center;justify-content:space-between}
+.big .l{font-weight:600;font-size:32px;line-height:1.45;color:rgba(255,255,255,.75)}
+.big .l b{color:#fff;font-weight:700}
+.big .r{font-weight:900;font-size:92px;letter-spacing:-0.04em}
+.big .r small{font-size:44px;font-weight:800;margin-left:4px}
+.foot{position:absolute;left:96px;right:96px;bottom:70px;display:flex;justify-content:space-between;font-weight:600;font-size:26px;color:var(--muted)}
+.foot .b{color:var(--ink);font-weight:800}
+/* compare */
+.c2 h2{margin-top:48px;font-weight:900;font-size:76px;letter-spacing:-0.04em;line-height:1.2}
+.c2 h2 .hl{color:var(--accent)}
+.tbl{margin-top:44px;width:100%;border-collapse:separate;border-spacing:0;background:var(--panel);border-radius:24px;overflow:hidden;box-shadow:0 0 0 2px var(--line)}
+.tbl th{font-weight:800;font-size:30px;padding:26px 28px;text-align:left;background:#EFEBE2;color:var(--muted)}
+.tbl th.after{background:var(--accent);color:#fff}
+.tbl td{font-weight:600;font-size:32px;padding:30px 28px;border-top:2px solid var(--line);letter-spacing:-0.02em;vertical-align:middle;word-break:keep-all}
+.tbl td.k{font-weight:700;color:var(--muted);width:26%}
+.tbl td.b4{color:var(--muted);width:34%}
+.tbl td.af{font-weight:800;color:var(--ink)}
+.tbl td.af.chg{color:var(--accent)}
+.note{margin-top:36px;font-weight:600;font-size:28px;line-height:1.5;color:var(--ink)}
+.note b{color:var(--accent);font-weight:800}
+</style></head><body>
+
+<section class="card" id="c1">
+  <div class="top"><span class="pill">생활정책 브리핑</span><span class="date">2026.10.29 시행</span></div>
+  <h1>양육비 선지급제<br><span class="hl">소득 기준</span> 폐지</h1>
+  <p class="sub">한부모 가정, 이제 소득과 관계없이 신청할 수 있어요</p>
+  <div class="big">
+    <p class="l">자녀 1인당 · 18세 이하<br><b>국가가 먼저 지급</b></p>
+    <p class="r">월 20<small>만원</small></p>
+  </div>
+  <div class="foot"><span class="b">밀림의 왕</span><span>대상 · 금액 · 신청법 총정리</span></div>
+</section>
+
+<section class="card c2" id="c2">
+  <div class="top"><span class="pill">한눈에 비교</span><span class="date">2026.10.29 시행</span></div>
+  <h2>무엇이 <span class="hl">바뀌나요?</span></h2>
+  <table class="tbl">
+    <tr><th></th><th>바뀌기 전</th><th class="after">바뀐 후</th></tr>
+    <tr><td class="k">소득 기준</td><td class="b4">기준 중위소득<br>150% 이하만</td><td class="af chg">기준 없음</td></tr>
+    <tr><td class="k">지급액</td><td class="b4">자녀 1인 월 20만원</td><td class="af">동일</td></tr>
+    <tr><td class="k">대상 자녀</td><td class="b4">18세 이하</td><td class="af">동일</td></tr>
+      </table>
+  <p class="note">달라지는 건 <b>소득 기준 하나</b>예요.<br>양육비를 못 받는 한부모 가정이면 소득과 상관없이 신청 가능해요.</p>
+  <div class="foot"><span class="b">밀림의 왕</span><span>2026.10.01 기준 · 출처: 재정경제부</span></div>
+</section>
+</body></html>
